@@ -26,8 +26,7 @@ $msg="Following are the customer details:<br/><br/>Name: ".$name."<br/><br/>Emai
  
   
   //Email response
-  header('Location: https://64c23f15d559ce6e8ae06f43--aquamarine-banoffee-62dc33.netlify.app/');
-  
+  header('Location: contact.html');
 }
   
  
