@@ -1,0 +1,210 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+    font-family: 'Lato', sans-serif;
+
+
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+
+}
+
+.tab.active {
+    @apply bg-theme-blue;
+    @apply text-base-100;
+
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    margin: 0;
+    opacity: 0;
+    transition: 1s ease-in-out;
+    overflow: hidden;
+}
+
+.slide img {
+    width: 100%;
+}
+
+button.testo {
+    position: absolute;
+    top: 50%;
+
+
+    transition: 0.5s ease-in-out;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.dots_container {
+    display: flex;
+    margin: 5px auto;
+    width: fit-content;
+}
+
+.dots {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: #bdbdbd;
+    margin: 4px;
+}
+
+.dots:hover {
+    background: #696969 !important;
+}
+
+@media screen and (max-width:600px) {
+    .slide {
+        height: fit-content;
+    }
+
+    button.testo {
+        top: 50%;
+    }
+}
+
+.quates::before {
+
+    content: '"';
+
+
+}
+
+.quates::after {
+
+    content: '"';
+
+}
+
+/*Slick*/
+.slick-track {
+    height: 80vh;
+}
+
+.top-carousel {
+    height: 80vh;
+}
+
+.slick-dots {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    position: relative;
+    top: -50px;
+}
+
+.slick-dots li button {
+    border: none;
+    outline: none;
+    color: transparent !important;
+}
+
+.slick-dots li {
+    background-color: #bdbdbd;
+    width: 50px;
+    border-radius: 5px;
+    height: 8px;
+    cursor: pointer;
+
+}
+
+.slick-dots li.slick-active {
+    @apply bg-theme-orange;
+}
+
+.group-all {
+    transition: all 0.6ms;
+    cursor: pointer;
+}
+
+.group-all:hover {
+    transition: all 0.6ms;
+}
+
+.group-all:hover div:first-child {
+    background-color: #fff;
+}
+
+/* .group-all:hover div img{
+    filter: drop-shadow(0px 2px 5px #F9B03D); 
+
+} */
+
+.banner-1 {
+    background-image: url(../images/banner/Banner_1.jpg);
+}
+
+.banner-2 {
+    background-image: url(../images/banner/Banner_2.jpg);
+}
+
+.form-bg {
+    background-image: url(../images/banner/backgroundForm.jpg);
+}
+
+.solar-top {
+
+    background-image: url(../images/banner/solar.jpg);
+}
+
+.Residentialsolar {
+
+    background-image: url(../images/banner/Residential.jpg);
+}
+
+#uptop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    right: 30px;
+    z-index: 99;
+    transition: all 0.6s;
+
+    border: none;
+    outline: none;
+    @apply bg-theme-orange;
+    color: white;
+    cursor: pointer;
+    padding: 0px 0px 0px 15px;
+    border-radius: 4px;
+}
+
+.group-all div img {
+
+    filter: contrast(108.5) brightness(23.5) grayscale(100);
+
+
+}
+
+.group-all:hover div img {
+    filter: none !important;
+}
+
+.new-para {
+    text-align: justify;
+    text-align-last: center;
+}
