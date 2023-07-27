@@ -17,16 +17,16 @@ $subject="Customer contact on  Solar Boost Australia  ";
 
 $msg="Following are the customer details:<br/><br/>Name: ".$name."<br/><br/>Email: ".$email."<br/><br/>Message: ".$message;
 
-         $header= "From: info@solarboostaustralia.com" . "\r\n" ;
+         $header= "From:info@solarboostaustralia.com" . "\r\n" ;
          $header .= "Cc:tushar.pandit7@gmail.com \r\n";
          $header .= "MIME-Version: 1.0\r\n";
          $header .= "Content-type: text/html\r\n";
-         $retval = mail ($admin_email,$subject,$msg,$header, $name,$email);
+         $retval = mail ($admin_email,$subject,$msg,$header);
   
  
   
   //Email response
-  header('Location:index.html');
+  header('Location: index.html');
   
 }
   
