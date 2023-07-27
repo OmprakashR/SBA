@@ -26,7 +26,7 @@ $msg="Following are the customer details:<br/><br/>Name: ".$name."<br/><br/>Emai
  
   
   //Email response
-  header('Location: contact.html');
+  header('Location:contact.html');
 }
   
  
